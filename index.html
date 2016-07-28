@@ -1,10 +1,11 @@
+
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <title>Hello Meijun!</title>
+    <title>Hello Test1.4!</title>
     <style type="text/css">
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
     margin:0;
@@ -101,7 +102,7 @@ body {
     <div id="map"></div>
 
 <!-- 指定全局的分享内容 -->
-<input id="wsContent" type="hidden" value="一个送给美君的生日礼物，也是送给所有异地恋人的礼物「变得是距离，不变的是坚持」。 via @LOO2K">
+<input id="wsContent" type="hidden" value="一个送给我们家豆豆的生日礼物，也是送给所有异地恋人的礼物「变得是距离，不变的是坚持」。 感谢 @LOO2K提供的模板">
 <!-- 指定全局的分享链接 -->
 <input id="wsUrl" type="hidden" value="http://liumeijun.com/">
 <!-- 指定全局的分享图片 -->
@@ -126,14 +127,14 @@ body {
 var MP_CEN = {lng: 3.894763, lat: 44.529534};
 // 中国中心
 var CN_CEN = {lng: 103.758427, lat: 36.172333};
-// 嘉应学院
-var MZ_JYU = {lng: 116.135018, lat: 24.33438};
-// 广外艺
-var GZ_GTC = {lng: 113.345774, lat: 23.153356};
-// 广州市
-var GD_GZS = {lng: 113.256838, lat: 23.157309};
-// 河源市
-var GD_HYS = {lng: 114.701682, lat: 23.754195};
+// 南邮
+var MZ_JYU = {lng: 119.407906, lat: 32.344909};
+// 淮阴工学院
+var GZ_GTC = {lng: 119.045278, lat: 33.551367};
+// 淮安市
+var GD_GZS = {lng: 119.013541, lat: 33.627018};
+// 扬州市
+var GD_HYS = {lng: 119.404484, lat: 32.410317};
 // 背景音乐
 var MUSIC;
 
@@ -230,13 +231,13 @@ function panZoom_HEY() {
             setTimeout(function() {
                 var between = [
                     {
-                        title: '梅州 → 广州',
-                        content: '426 km.',
+                        title: '淮安市 → 扬州市',
+                        content: '180.4 km.',
                         point: MZ_JYU
                     },
                     {
-                        title: '梅州 → 广州',
-                        content: '5 hours by train.',
+                        title: '扬州市 → 淮安市',
+                        content: '3 hours by bus.',
                         point: GZ_GTC
                     },
                     {
@@ -258,14 +259,14 @@ function showPhotos() {
         zoomTo(13, 1000, function() {
             var photos = [
                 {
-                    title: '纪念堂',
-                    content: '<img src="http://lukesign.qiniudn.com/images/jiniantang.jpg" width="500" height="373" alt="纪念堂" />',
-                    point: {lng: 113.271147, lat: 23.139616}
+                    title: '教工楼',
+                    content: '<img src="http://oaz0j0931.bkt.clouddn.com/mmexport1468832601344.jpg" width="500" height="373" alt="教工楼" />',
+                    point: {lng: 119.043975, lat: 33.549483}
                 },
                 {
-                    title: '陈家祠',
-                    content: '<img src="http://lukesign.qiniudn.com/images/chenjiaci.jpg" width="500" height="373" alt="陈家祠" />',
-                    point: {lng: 113.252764, lat: 23.131838}
+                    title: '恐龙园',
+                    content: '<img src="http://lukesign.qiniudn.com/images/chenjiaci.jpg" width="500" height="373" alt="恐龙园" />',
+                    point: {lng: 120.007588, lat: 31.830704}
                 },
                 {
                     title: '看电影',
@@ -1080,7 +1081,7 @@ function showMarkerText() {
             loopAddMarker(markerText, function() {
                 setTimeout(function() {
                     slideDown('theEnd', 1000, function() {
-                        var theEndText = '<div id="theEndText">Happy birthday to my dearest Meijun :) --by LOO2K<br />' + 
+                        var theEndText = '<div id="theEndText">Happy birthday to my dearest JiaXiaoYing :) --by Shuxin Pan<br />' + 
                                          '<button data-toggle="wshare" data-type="weibo">分享到微博</button>' + 
                                          '<button onclick="window.location.reload();">再看一次</button></div>';
                         document.getElementById('theEnd').innerHTML = theEndText;
